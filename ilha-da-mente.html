@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilha da Mente - Mundo do Autocuidado</title>
+    <link rel="stylesheet" href="ilha-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <a href="index.html" class="back-to-menu-btn">← Voltar ao Menu</a>
+
+    <div class="main-container">
+        <header class="page-header">
+            <img src="images/ilha-mente.png" alt="Ilha da Mente" class="header-icon">
+            <h2>Ilha da Mente</h2>
+        </header>
+
+        <nav class="page-tabs">
+            <button class="tab-link active" data-tab="diario">Meu Diário</button>
+            <button class="tab-link" data-tab="respiracao">Respiração Mágica</button>
+            <button class="tab-link" data-tab="palavras">Palavras Mágicas</button>
+        </nav>
+
+        <main class="page-body">
+            <div id="diario-content" class="tab-content active">
+                <h3>Olá! Conte-me sobre o seu dia...</h3>
+                <p>Escreva aqui o que você sentiu, o que mais gostou ou qualquer coisa que queira compartilhar.</p>
+                <textarea placeholder="Hoje eu me senti..."></textarea>
+                <button class="action-btn">Guardar no Coração ✨</button>
+            </div>
+            <div id="respiracao-content" class="tab-content">
+                <h3>Vamos nos acalmar juntos?</h3>
+                <p>Siga o círculo mágico com a sua respiração.</p>
+                <div class="breathing-circle-container">
+                    <div class="breathing-circle"></div>
+                    <span class="breathing-text">Inspire...</span>
+                </div>
+                <div class="breathing-steps">
+                    <p><strong>Passo 1:</strong> Inspire (puxe o ar) pelo nariz enquanto o círculo cresce.</p>
+                    <p><strong>Passo 2:</strong> Segure o ar por um instante.</p>
+                    <p><strong>Passo 3:</strong> Expire (solte o ar) pela boca enquanto o círculo encolhe.</p>
+                    <p><strong>Passo 4:</strong> Faça uma pequena pausa.</p>
+                </div>
+            </div>
+            <div id="palavras-content" class="tab-content">
+                <h3>Feche os olhos e receba uma palavra de força!</h3>
+                <p>Clique no botão para sortear uma mensagem especial para você.</p>
+                <div class="magic-word-display">
+                    Sua palavra mágica aparecerá aqui!
+                </div>
+                <button class="action-btn" id="magic-word-btn">Receber Palavra Mágica 🌟</button>
+            </div>
+        </main>
+    </div>
+
+    <div id="custom-alert-overlay" class="custom-alert-overlay">
+        <div class="custom-alert-box">
+            <p id="custom-alert-message">Sua mensagem aparecerá aqui!</p>
+            <button id="custom-alert-close-btn" class="action-btn">OK</button>
+        </div>
+    </div>
+    <script src="ilha-script.js"></script>
+</body>
+</html>

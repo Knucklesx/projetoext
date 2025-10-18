@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilha da Gentileza - Mundo do Autocuidado</title>
+    <link rel="stylesheet" href="ilha-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <a href="index.html" class="back-to-menu-btn">← Voltar ao Menu</a>
+
+    <div class="main-container">
+        <header class="page-header">
+            <img src="images/ilha-gentileza.png" alt="Ilha da Gentileza" class="header-icon">
+            <h2>Ilha da Gentileza</h2>
+        </header>
+
+        <nav class="page-tabs">
+            <button class="tab-link active" data-tab="licoes">Lições de Gentileza</button>
+            <button class="tab-link" data-tab="espalhe">Espalhe Gentileza</button>
+            <button class="tab-link" data-tab="mural">Mural da Gentileza</button>
+        </nav>
+
+        <main class="page-body">
+            <div id="licoes-content" class="tab-content active">
+                <h3>O que é ser gentil?</h3>
+                <p>A gentileza é como um abraço quentinho! Clique no botão para aprender uma forma de ser gentil hoje.</p>
+                <div class="lesson-display">
+                    Sua lição de gentileza aparecerá aqui!
+                </div>
+                <button class="action-btn pink" id="new-lesson-btn">Receber uma Lição ❤️</button>
+            </div>
+
+            <div id="espalhe-content" class="tab-content">
+                <h3>Sua vez de brilhar!</h3>
+                <p>Deixe uma mensagem positiva para alegrar o dia de alguém.</p>
+                <input type="text" id="kindness-name" placeholder="Seu nome..." maxlength="20">
+                <textarea id="kindness-message" placeholder="Hoje eu ajudei... / Gostaria de dizer que..."></textarea>
+                <button class="action-btn pink" id="publish-btn">Publicar no Mural 💌</button>
+            </div>
+
+            <div id="mural-content" class="tab-content">
+                <h3>Um lugar cheio de carinho!</h3>
+                <p>Veja todas as mensagens gentis que foram compartilhadas. A sua também está aqui!</p>
+                <div class="kindness-mural" id="kindness-mural">
+                    </div>
+            </div>
+        </main>
+    </div>
+
+    <div id="custom-alert-overlay" class="custom-alert-overlay">
+        <div class="custom-alert-box">
+            <p id="custom-alert-message">Sua mensagem aparecerá aqui!</p>
+            <button id="custom-alert-close-btn" class="action-btn pink">OK</button>
+        </div>
+    </div>
+    <script src="gentileza-script.js"></script>
+</body>
+</html>
